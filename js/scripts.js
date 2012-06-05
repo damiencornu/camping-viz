@@ -9,12 +9,12 @@ $(function() {
   
   
   // Préparation de Raphael.js
-  var r = Raphael('contextual', 600, 600),
+  /*var r = Raphael('main_right_star', 600, 600),
   param = {stroke: "#fff", "stroke-width": 30};
   
   var pathTemp = "M150,200 a150,150 0 1,0 150,-150"
   var star1 = r.path(pathTemp);
-  
+  */
   // Fin de l'initialisation de Raphael.js
   
   
