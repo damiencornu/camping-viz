@@ -13,13 +13,15 @@ line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } b
 /* End hide from IE-mac */
 
 body{
- background-color:#d3e1a5;	
+ background-color:#d3e1a5;
+ overflow:hidden;
 }
 
 #bg{
 		background-image:url(img/background.jpg);
 		background-repeat:no-repeat;
 		width:1200px;
+		margin:0 auto;
 }
 
 #header_left p, #header_right p, #header_right h1, #header_right p span{
@@ -104,7 +106,10 @@ body{
 #main_center{
 	margin-top:100px;
 	float:left;
+	position:relative;
 }
+  #nbe-campings { display:block; position:absolute; bottom:1px; left:64px; width:12px; height:25px; background-color:#989e5a; }
+  #nbe-emplacements { display:block; position:absolute; bottom:1px; left:78px; width:12px; height:25px; background-color:#27341e; }
 
 /*Partie droite*/
 #main_right{

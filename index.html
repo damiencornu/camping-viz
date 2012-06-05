@@ -23,7 +23,7 @@
 			</div>
 			<div id="header_right">
 	  			<h1>Répartition de campings en France</h1>
-				<p><span>en <img src="css/img/fleche_gauche.png"/> 2003 <img src="css/img/fleche_droite.png"/></span></p>
+				<p><span>en <img src="css/img/fleche_gauche.png"/> 2012 <img src="css/img/fleche_droite.png"/></span></p>
 			</div>
 	  	</header>
 	
@@ -44,17 +44,15 @@
 			<!--Barre centrale-->
 			<div id="main_center">
 				<img src="css/img/deco_diag_baton_1.png">
+        <span id="nbe-campings"></span>
+        <span id="nbe-emplacements"></span>
 			</div>
 			
 			<!--Partie des cercles-->
 			<div id="main_right">
 				<!--Espace pour les cercles-->
-				<div id="main_right_star">
-					<img src="css/img/1_etoile.png"/>
-					<img src="css/img/2_etoiles.png"/>
-					<img src="css/img/3_etoiles.png"/>
-					<img src="css/img/4_etoiles.png"/>
-				</div>
+				<canvas id="main_right_star">
+				</canvas>
 				<p id="title_legend_2">Répartition des campings et des emplacements selon leurs catégories ( 1, 2, 3 ou 4 étoiles )</p>
 				<div id="main_right_legend" class="clearfix">
 					<p><img src="css/img/legende_ronds_1.png"/><span id="text1">Campings</span></p>

@@ -17,11 +17,11 @@ $(function() {
   */
   // Fin de l'initialisation de Raphael.js
   
-  
+  var year = 2012;
   initDataviz();
   
   function initDataviz(){
-    updateMap(2012);
+    updateMap(year);
   }
   
   function updateMap(year){
@@ -55,25 +55,21 @@ $(function() {
   }
   
   function updateContextual(divId){
-    // Get rid of the XXX- part before the id
     var id = divId.split('-')[1];
-    console.log("id : ");
-    console.log(id);
-    
-    var percent = 0.30,
-        beginAngle = - Math.PI/2 + (percent * Math.PI),
-        endAngle = - Math.PI/2 - (percent * Math.PI);
-    
-    console.log("beginAngle  + endAngle: ");
-    console.log(beginAngle + ' ' + endAngle);
-    
-    var canvas = document.getElementById('contextual-1');
-    var ctx = canvas.getContext('2d');
-        ctx.lineWidth = 40;
-    
-    ctx.beginPath();
-    ctx.arc(100,100,60,beginAngle,endAngle,true)
-    ctx.stroke();
-    
+    ds.fetch({
+      success : function() {
+        var datas = this.where({
+          columns: ['CPG12','CPGE12'],
+          rows: function(row) {
+            return row.ANNEE == year && row.REG == id;
+          }
+        });
+        datas = datas.toJSON()[0];
+        // init hauteur à 0 ?
+        // $('#main_center span').css({height:0});
+        $('#main_center #nbe-campings').stop().animate({height :  datas.CPG12 * 450 / 900}, 1000);
+        $('#main_center #nbe-emplacements').stop().animate({height :  datas.CPGE12 * 450 / 130000}, 1000);
+      }
+    });
   }
 });
