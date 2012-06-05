@@ -5,4 +5,186 @@ line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } b
 /* remember to define focus styles! */ :focus { outline: 0; }
 /* remember to highlight inserts somehow! */ ins { text-decoration: none; } del { text-decoration: line-through; }
 /* tables still need 'cellspacing="0"' in the markup */ table { border-collapse: collapse; border-spacing: 0; } /* FIN DU RESET */
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;	}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
 
+
+body{
+ background-color:#d3e1a5;	
+}
+
+#bg{
+		/*background-image:url(img/background.jpg);
+		background-repeat:no-repeat;*/
+		width:1200px;
+}
+
+#header_left p, #header_right p, #header_right h1, #header_right p span{
+	font-family: 'Architects Daughter', cursive;
+	color:#27341e;
+}
+
+/*Partie gauche du header*/
+#header_left{
+	margin-top:15px;
+	float : left;
+	width:175px;
+	margin-left:20px;
+	font-size:13px;
+
+}
+
+/*Flèche noire à gauche du header*/
+#header_left img{
+	margin-left:40px;
+}
+
+/*Partie droite du header*/	
+#header_right{
+	margin-top:15px;
+	float:right;
+	font-size : 35px;
+}
+
+/*Changement d'année*/
+#header_right p span{
+	margin-left:410px;
+}
+
+/*Contenu avec la map et sa légende*/
+#main_left{
+	float:left;
+	text-align:center;
+}
+
+
+/*Positionnement de la map*/
+#map{
+	margin-top : -10px;
+}
+
+/*Titre de la légende de la map*/
+#title_legend{
+	font-family: 'Architects Daughter', cursive;
+	color:#27341e;
+	font-size:18px;
+	margin-top:-15px;
+}
+
+/*Légende de la map*/
+#main_left_legend{
+	margin-top: 15px;
+}
+
+/*Texte de la légende de la map*/
+#main_left_legend p{
+	float:left;
+	margin-left:60px;
+	
+}
+
+/*Image de la légende de la map*/
+#main_left_legend img{
+	float:left;
+	margin-right:5px;
+}
+
+/*Texte des légendes de la map*/
+.legende{
+	float:right;
+	font-family: 'Architects Daughter', cursive;
+	font-size:12px;
+	width:100px;
+}
+
+/*Barre centrale*/
+#main_center{
+	margin-top:100px;
+	float:left;
+}
+
+/*Partie droite*/
+#main_right{
+	float:left;
+	width:430px;
+	text-align:center;
+}
+
+/*Titre de la légende des cercles*/
+#title_legend_2{
+	font-family: 'Architects Daughter', cursive;
+	color:#27341e;
+	font-size:18px;
+	margin-bottom:35px;
+}
+
+/*Légendes des cercles*/
+#main_right_legend p{
+	float:left;
+	text-align:left;
+	margin-left:30px;
+}
+
+/*Images de la légende des cercles*/
+#main_right_legend img{
+	float:left;
+	margin-right:10px;
+}	
+
+/*Textes des légendes des cercles*/
+#text1, #text2, #text3{
+	float:right;
+	margin-top:5px;
+	font-family: 'Architects Daughter', cursive;
+	font-size:12px;	
+}
+
+/*Texte 1 des légendes des cercles*/
+#text1{
+	width:50px;
+}
+
+/*Texte 2 des légendes des cercles*/
+#text2{
+	width:80px;
+}
+
+/*Texte 3 des légendes des cercles*/
+#text3{
+	width:100px;
+}
+
+/*Espace des cercles*/
+#main_right_star{
+	height: 485px;
+}
+footer{
+	width:100%;
+}
+#vfonce{
+	float:left;
+	width:664px;
+	background-color:#989e5a;
+	height:10px;
+}
+
+#vclair{
+	float:right;
+	width:536px;
+	background-color:#3b4f2e;
+	height:10px;
+}
+
+#info{
+	float:right;
+	width:30px;
+	height:30px;
+	background-color:#3b4f2e;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
