@@ -18,8 +18,8 @@ body{
 }
 
 #bg{
-		/*background-image:url(img/background.jpg);
-		background-repeat:no-repeat;*/
+		background-image:url(img/background.jpg);
+		background-repeat:no-repeat;
 		width:1200px;
 }
 
@@ -179,12 +179,12 @@ footer{
 	height:10px;
 }
 
-#info{
-	float:right;
+/*#info{
+	position:absolute;
 	width:30px;
 	height:30px;
 	background-color:#3b4f2e;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
-}
+}*/
