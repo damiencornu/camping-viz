@@ -199,14 +199,13 @@
      style="display:inline"
      sodipodi:insensitive="true">
     <text
-       xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="128.90601"
        y="389.08099"
        id="text9682"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan9684"
+         id="txt-54"
          x="128.90601"
          y="389.08099" /></text>
     <text
@@ -231,19 +230,18 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="145.5358"
        y="373.21939"
-       id="text9692"
+       id="txt-72"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9694"
          x="145.5358"
-         y="373.21939"
-         style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Serif">Aquitaine</tspan></text>
+         y="373.21939" style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Serif">Aquitaine</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="197.379"
        y="419.31537"
-       id="text9700"
+       id="txt-73"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9702"
@@ -252,24 +250,13 @@
          style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Serif">Midi-Pyrénées</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="141.40601"
-       y="460.17499"
-       id="text9704"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan9706"
-         x="141.40601"
-         y="460.17499" /></text>
-    <text
-       xml:space="preserve"
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="322.73053"
        y="436.82129"
        id="text9716"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
-         id="tspan9718"
+         id="txt-91"
          x="347.73053"
          y="403.82129"
          style="font-size:10px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;font-family:Serif">Languedoc-</tspan><tspan
@@ -283,7 +270,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="432.73828"
        y="407.86649"
-       id="text9720"
+       id="txt-93"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          x="432.73828"
@@ -305,7 +292,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="364.3317"
        y="320.9863"
-       id="text9724"
+       id="txt-82"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9726"
@@ -320,7 +307,7 @@
        id="text9728"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
-         id="tspan9730"
+         id="txt-83"
          x="284.00299"
          y="324.64801"
          style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;font-family:Serif">Auvergne</tspan></text>
@@ -329,7 +316,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="313.50739"
        y="226.93872"
-       id="text9732"
+       id="txt-26"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9734"
@@ -341,7 +328,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="427.73679"
        y="216.27156"
-       id="text9736"
+       id="txt-43"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          x="427.73679"
@@ -358,7 +345,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="456.99399"
        y="154.856"
-       id="text9744"
+       id="txt-42"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9746"
@@ -370,7 +357,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="386.35068"
        y="123.58474"
-       id="text9748"
+       id="txt-41"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9750"
@@ -385,7 +372,7 @@
        id="text9752"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
-         id="tspan9754"
+         id="txt-21"
          x="354.59"
          y="145.136"
          style="font-size:11px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;font-family:Serif">Champagne-</tspan><tspan
@@ -395,11 +382,10 @@
          style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;font-family:Serif"
          id="tspan9820">Ardenne</tspan></text>
     <text
-       xml:space="preserve"
-       style="font-size:11px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
+       xml:space="preserve" style="font-size:11px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="283.81259"
        y="141.78557"
-       id="text9756"
+       id="txt-11"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          x="283.81259"
@@ -416,7 +402,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="264.73901"
        y="88.714203"
-       id="text9760"
+       id="txt-22"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9762"
@@ -428,7 +414,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="267.12378"
        y="31.855732"
-       id="text9764"
+       id="txt-31"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          x="287.12378"
@@ -445,7 +431,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="216.14029"
        y="83.898766"
-       id="text9776"
+       id="txt-23"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9778"
@@ -462,7 +448,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;text-anchor:middle;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="168.26984"
        y="118.68507"
-       id="text9780"
+       id="txt-25"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9782"
@@ -479,7 +465,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="56.7822"
        y="169.966"
-       id="text9784"
+       id="txt-53"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9786"
@@ -491,7 +477,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="97.148232"
        y="215.15094"
-       id="text9788"
+       id="txt-52"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9790"
@@ -503,7 +489,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="234.39091"
        y="212.21695"
-       id="text9792"
+       id="txt-24"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9794"
@@ -515,7 +501,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="220.92665"
        y="311.50662"
-       id="text9796"
+       id="txt-74"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9798"
@@ -527,7 +513,7 @@
        style="font-size:12px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#FFFFFF;fill-opacity:1;stroke:none;display:inline;font-family:Serif"
        x="546.33698"
        y="508.177"
-       id="text9822"
+       id="txt-94"
        sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
          id="tspan9824"

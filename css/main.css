@@ -49,12 +49,14 @@ body{
 	margin-top:15px;
 	float:right;
 	font-size : 35px;
+	text-align:right;
 }
 
 /*Changement d'année*/
-#header_right p span{
-	margin-left:410px;
-}
+#header_right p{}
+#header_right p span#year { width:60px; display:inline-block; }
+#header_right a {  }
+
 
 /*Contenu avec la map et sa légende*/
 #main_left{
@@ -108,8 +110,8 @@ body{
 	float:left;
 	position:relative;
 }
-  #nbe-campings { display:block; position:absolute; bottom:1px; left:64px; width:12px; height:25px; background-color:#989e5a; }
-  #nbe-emplacements { display:block; position:absolute; bottom:1px; left:78px; width:12px; height:25px; background-color:#27341e; }
+  #nbe-campings { display:block; position:absolute; bottom:1px; left:64px; width:12px; height:1px; background:url(img/camp_square.png) repeat-y center bottom; }
+  #nbe-emplacements { display:block; position:absolute; bottom:1px; left:78px; width:12px; height:1px; background:url(img/loc_square.png) repeat-y center bottom; }
 
 /*Partie droite*/
 #main_right{
