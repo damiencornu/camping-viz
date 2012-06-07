@@ -19,20 +19,26 @@ $(function() {
     updateMap();
   }
   
-  $('#prevYear').on('click', function(event){
+  $('#prevYear:not(.disabled)').live('click', function(event){
     year = parseInt($('#year').text()) - 1;
+    if (year <= 2003) { $('#prevYear').addClass('disabled'); }
+    if (year < 2012) { $('#nextYear').removeClass('disabled'); }
     $('#year').text(year);
     updateMap();
     updateContextual();
     event.preventDefault();
   });
-  $('#nextYear').on('click', function(event){
+  $('#nextYear:not(.disabled)').live('click', function(event){
     year = parseInt($('#year').text()) + 1;
+    if (year >= 2012) { $('#nextYear').addClass('disabled'); }
+    if (year > 2003) { $('#prevYear').removeClass('disabled'); }
     $('#year').text(parseInt($('#year').text()) + 1);
     updateMap();
     updateContextual();
     event.preventDefault();
   });
+  
+  
   
   function updateMap(){
     ds.fetch({
@@ -65,7 +71,6 @@ $(function() {
     });
   }
   
-  
   function updateContextual(){
     ds.fetch({
       success : function() {
@@ -79,36 +84,69 @@ $(function() {
           }
         });
         datas = datas.toJSON()[0];
+        $('#header_left img').css('margin-top','14px').attr('src','css/img/tente_nom_region.png');
+        $('#header_left p').css('margin-top','10px').html('<span>'+associatedCounties[curReg]+'</span><ul><li>&nbsp;-&nbsp;<span>'+datas.CPG+'</span> campings</li><li>&nbsp;-&nbsp;<span>'+datas.CPG_E+'</span> emplacements</li></ul>');
         // init hauteur à 0 ?
         // $('#main_center span').css({height:0});
         $('#main_center #nbe-campings').stop().animate({height :  datas.CPG * 450 / 900}, 1000);
         $('#main_center #nbe-emplacements').stop().animate({height :  datas.CPG_E * 450 / 130000}, 1000);
           r.clear();
           // 1 étoile
-          var sizeCamp = 8 + 40 * (datas.CPG_1 / datas.CPG);
-              sizeLoca = sizeCamp + 10 + 50 * (datas.CPG_E_1 / datas.CPG_E);
-          r.pieChart(80, 150, sizeLoca, [datas.CPG_EO_1, datas.CPG_EL_1], [datas.CPG_EO_1, datas.CPG_EL_1]);
-          r.circle(80,150,sizeCamp).attr({fill:"#FFF"});
+          var sizeCamp = 12 + 60 * (datas.CPG_1 / datas.CPG);
+              sizeLoca = sizeCamp + 10 + 90 * (datas.CPG_E_1 / datas.CPG_E);
+          r.pieChart(100, 180, sizeLoca, [datas.CPG_EO_1, datas.CPG_EL_1], [datas.CPG_EO_1, datas.CPG_EL_1]);
+          r.circle(100,180,sizeCamp).attr({fill:"#989e5a", "stroke-width":0});
+          r.text(100,180,'★');
           // 2 étoiles
-            sizeCamp = 8 + 40 * (datas.CPG_2 / datas.CPG);
-            sizeLoca = sizeCamp + 10 + 50 * (datas.CPG_E_2 / datas.CPG_E);
-          r.pieChart(310, 150, sizeLoca, [datas.CPG_EO_2, datas.CPG_EL_2], [datas.CPG_EO_2, datas.CPG_EL_2]);
-          r.circle(310,150,sizeCamp).attr({fill:"#FFF"});
+            sizeCamp = 12 + 60 * (datas.CPG_2 / datas.CPG);
+            sizeLoca = sizeCamp + 10 + 90 * (datas.CPG_E_2 / datas.CPG_E);
+          r.pieChart(310, 180, sizeLoca, [datas.CPG_EO_2, datas.CPG_EL_2], [datas.CPG_EO_2, datas.CPG_EL_2]);
+          r.circle(310,180,sizeCamp).attr({fill:"#989e5a", "stroke-width":0});
+          r.text(310,180,'★★');
           // 3 étoiles
-            sizeCamp = 8 + 40 * (datas.CPG_3 / datas.CPG);
-            sizeLoca = sizeCamp + 10 + 50 * (datas.CPG_E_3 / datas.CPG_E);
-          r.pieChart(80, 360, sizeLoca, [datas.CPG_EO_3, datas.CPG_EL_3], [datas.CPG_EO_3, datas.CPG_EL_3]);
-          r.circle(80,360,sizeCamp).attr({fill:"#FFF"});
+            sizeCamp = 12 + 60 * (datas.CPG_3 / datas.CPG);
+            sizeLoca = sizeCamp + 10 + 90 * (datas.CPG_E_3 / datas.CPG_E);
+          r.pieChart(100, 360, sizeLoca, [datas.CPG_EO_3, datas.CPG_EL_3], [datas.CPG_EO_3, datas.CPG_EL_3]);
+          r.circle(100,360,sizeCamp).attr({fill:"#989e5a", "stroke-width":0});
+          r.text(100,355,'★');
+          r.text(100,365,'★★');
           // 4 étoiles
-            sizeCamp = 8 + 40 * (datas.CPG_4 / datas.CPG);
-            sizeLoca = sizeCamp + 10 + 50 * (datas.CPG_E_4 / datas.CPG_E);
+            sizeCamp = 12 + 60 * (datas.CPG_4 / datas.CPG);
+            sizeLoca = sizeCamp + 10 + 90 * (datas.CPG_E_4 / datas.CPG_E);
           r.pieChart(310, 360, sizeLoca, [datas.CPG_EO_4, datas.CPG_EL_4], [datas.CPG_EO_4, datas.CPG_EL_4]);
-          r.circle(310,360,sizeCamp).attr({fill:"#FFF"});
+          r.circle(310,360,sizeCamp).attr({fill:"#989e5a", "stroke-width":0});
+          r.text(310,355,'★★');
+          r.text(310,365,'★★');
       }
     });
   }
+  
+  var associatedCounties = {
+    '11':'Île-de-France',
+    '21':'Champagne-Ardenne',
+    '22':'Picardie',
+    '23':'Haute Normandie',
+    '24':'Centre',
+    '25':'Basse Normandie',
+    '26':'Bourgogne',
+    '31':'Nord-Pas-de_Calais',
+    '41':'Lorraine',
+    '42':'Alsace',
+    '43':'Franche-Comté',
+    '52':'Pays de la Loire',
+    '53':'Bretagne',
+    '54':'Poitou-Charentes',
+    '72':'Aquitaine',
+    '73':'Midi-Pyrénées',
+    '74':'Limousin',
+    '82':'Rhônes Alpes',
+    '83':'Auvergne',
+    '91':'Languedoc Roussillon',
+    '93':'Provences Alpes Côtes d\'Azur',
+    '94':'Corse'
+  }
+  
 });
-
 
 // Raphael Pie Chart integration
 Raphael.fn.pieChart = function (cx, cy, r, values, labels) {

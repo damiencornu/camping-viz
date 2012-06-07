@@ -5,6 +5,7 @@ line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } b
 /* remember to define focus styles! */ :focus { outline: 0; }
 /* remember to highlight inserts somehow! */ ins { text-decoration: none; } del { text-decoration: line-through; }
 /* tables still need 'cellspacing="0"' in the markup */ table { border-collapse: collapse; border-spacing: 0; } /* FIN DU RESET */
+
 .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;	}
 .clearfix { display: inline-table; }
 /* Hides from IE-mac \*/
@@ -14,7 +15,7 @@ line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } b
 
 body{
  background-color:#d3e1a5;
- overflow:hidden;
+ overflow-x:hidden;
 }
 
 #bg{
@@ -23,6 +24,8 @@ body{
 		width:1200px;
 		margin:0 auto;
 }
+
+header { height:110px; }
 
 #header_left p, #header_right p, #header_right h1, #header_right p span{
 	font-family: 'Architects Daughter', cursive;
@@ -36,8 +39,10 @@ body{
 	width:175px;
 	margin-left:20px;
 	font-size:13px;
-
 }
+
+#header_left li {color:#6a6642;}
+#header_left span {color:#27341e; font-weight:bold;}
 
 /*Flèche noire à gauche du header*/
 #header_left img{
@@ -55,7 +60,7 @@ body{
 /*Changement d'année*/
 #header_right p{}
 #header_right p span#year { width:60px; display:inline-block; }
-#header_right a {  }
+#header_right a.disabled { opacity:0.3; }
 
 
 /*Contenu avec la map et sa légende*/
