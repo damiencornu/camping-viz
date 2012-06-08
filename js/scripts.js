@@ -13,7 +13,8 @@ $(function() {
   
   var year = 2012,
       curReg = "";
-  initDataviz();
+  
+  window.setTimeout(initDataviz, 1000);
   
   function initDataviz(){
     updateMap();
@@ -95,7 +96,7 @@ $(function() {
         datas = datas.toJSON()[0];
           $div = '<div id="header_left">';
           $div+= '<img src="css/img/tente_nom_region.png">';
-          $div+= '<p><span>Bretagne</span></p><ul><li>&nbsp;-&nbsp;<span>738</span> campings</li><li>&nbsp;-&nbsp;<span>85750</span> emplacements</li></ul>';
+          $div+= '<p><span>'+associatedCounties[curReg]+'</span></p><ul><li>&nbsp;-&nbsp;<span>'+datas.CPG+'</span> campings</li><li>&nbsp;-&nbsp;<span>'+datas.CPG_E+'</span> emplacements</li></ul>';
           $div+= '</div>';
         $('#header_left').html($div);
         // init hauteur à 0 ?
