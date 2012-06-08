@@ -38,7 +38,16 @@ $(function() {
     event.preventDefault();
   });
   
-  
+  $('#openInfoBulle').live('click',function(event){
+    $('#info-bg').css('display','block');
+    $('#info-bulle').slideDown(300);
+    event.preventDefault();
+  });
+  $('#info-bg').live('click', function(event){
+    $('#info-bulle').slideUp(300, function(){
+      $('#info-bg').css('display','none');
+    });
+  });
   
   function updateMap(){
     ds.fetch({
@@ -84,8 +93,11 @@ $(function() {
           }
         });
         datas = datas.toJSON()[0];
-        $('#header_left img').css('margin-top','14px').attr('src','css/img/tente_nom_region.png');
-        $('#header_left p').css('margin-top','10px').html('<span>'+associatedCounties[curReg]+'</span><ul><li>&nbsp;-&nbsp;<span>'+datas.CPG+'</span> campings</li><li>&nbsp;-&nbsp;<span>'+datas.CPG_E+'</span> emplacements</li></ul>');
+          $div = '<div id="header_left">';
+          $div+= '<img src="css/img/tente_nom_region.png">';
+          $div+= '<p><span>Bretagne</span></p><ul><li>&nbsp;-&nbsp;<span>738</span> campings</li><li>&nbsp;-&nbsp;<span>85750</span> emplacements</li></ul>';
+          $div+= '</div>';
+        $('#header_left').html($div);
         // init hauteur à 0 ?
         // $('#main_center span').css({height:0});
         $('#main_center #nbe-campings').stop().animate({height :  datas.CPG * 450 / 900}, 1000);

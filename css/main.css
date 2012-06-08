@@ -23,6 +23,8 @@ body{
 		background-repeat:no-repeat;
 		width:1200px;
 		margin:0 auto;
+		position:relative;
+		overflow:hidden;
 }
 
 header { min-height:110px; }
@@ -59,7 +61,7 @@ header { min-height:110px; }
 
 /*Changement d'année*/
 #header_right p{}
-#header_right p span#year { width:60px; display:inline-block; }
+#header_right p span#year { min-width:100px; width:100px; max-width:100px; display:inline-block; text-align:center;}
 #header_right a.disabled { opacity:0.3; }
 
 
@@ -174,8 +176,9 @@ header { min-height:110px; }
 	height: 485px;
 }
 footer{
-	width:100%;
+	width:100%; position:relative;
 }
+#openInfoBulle{display:block;width:30px;height:30px;position:absolute;bottom:-5px;right:-5px; border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;-o-border-radius: 20px; background:url(img/i_information.png)no-repeat center center #3b4f2e;}
 #vfonce{
 	float:left;
 	width:664px;
@@ -199,3 +202,14 @@ footer{
 	-moz-border-radius: 100px;
 	border-radius: 100px;
 }*/
+
+#info-bg {display:none; position:absolute;top:0;left:0;width:100%;height:100%; background:rgba(0,0,0,0.4);}
+#info-bulle{display:none; position:absolute;top:100px;width:100%;float:right;font-family: 'Architects Daughter', cursive; text-align:center; }
+#info-bulle .wrapper {margin:0 auto; width:600px;padding : 20px;background-color:#3b4f2e;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px; }
+#info-bulle h2{color:#989e5a; margin-top:25px;}
+#info-bulle p {text-align:justify;}
+#info-bulle	p:first-letter{ padding-left: 20px; }
+#info-bulle ul{list-style-type: none;padding: 0;margin-left: 10em;}
+#info-bulle li{list-style:none;background-image: url('css/img/tente_nom_region.png');background-repeat: no-repeat;background-position: 0 0em; margin-bottom:10px;padding-left: 2em;text-align:justify;}
+#info-bulle a{color:#989e5a;}
+#img-info{position:absolute;}
