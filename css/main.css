@@ -6,6 +6,9 @@ line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } b
 /* remember to highlight inserts somehow! */ ins { text-decoration: none; } del { text-decoration: line-through; }
 /* tables still need 'cellspacing="0"' in the markup */ table { border-collapse: collapse; border-spacing: 0; } /* FIN DU RESET */
 
+@font-face { font-family: DINPro; src: url('fonts/DINPro-Regular.otf'); }
+@font-face { font-family: DINPro; font-weight: bold; src: url('fonts/DINPro-Bold.otf'); }
+
 .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;	}
 .clearfix { display: inline-table; }
 /* Hides from IE-mac \*/
@@ -16,6 +19,7 @@ line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } b
 body{
  background-color:#d3e1a5;
  overflow-x:hidden;
+ font-family: 'DINPro', cursive;
 }
 
 #bg{
@@ -29,19 +33,17 @@ body{
 
 header { min-height:110px; }
 
-#header_left p, #header_right p, #header_right h1, #header_right p span{
-	font-family: 'Architects Daughter', cursive;
-	color:#27341e;
-}
+#header_left p, #header_right p, #header_right h1, #header_right p span{ color:#27341e; }
 
 /*Partie gauche du header*/
 #header_left{
 	margin-top:15px;
 	float : left;
 	width:175px;
-	font-size:13px;
+	font-size:14px;
 }
 
+#header_left p {font-size:14px;}
 #header_left li {color:#6a6642;}
 #header_left span {color:#27341e; font-weight:bold;}
 
@@ -58,6 +60,7 @@ header { min-height:110px; }
 	text-align:right;
 }
 
+#header_right h1, #header_right p, #title_legend, #title_legend_2 { font-family:'Architects Daughter', cursive; }
 /*Changement d'année*/
 #header_right p{}
 #header_right p span#year { min-width:100px; width:100px; max-width:100px; display:inline-block; text-align:center;}
@@ -78,7 +81,6 @@ header { min-height:110px; }
 
 /*Titre de la légende de la map*/
 #title_legend{
-	font-family: 'Architects Daughter', cursive;
 	color:#27341e;
 	font-size:18px;
 	margin-top:-15px;
@@ -105,8 +107,7 @@ header { min-height:110px; }
 /*Texte des légendes de la map*/
 .legende{
 	float:right;
-	font-family: 'Architects Daughter', cursive;
-	font-size:12px;
+	font-size:10px;
 	width:100px;
 }
 
@@ -116,8 +117,8 @@ header { min-height:110px; }
 	float:left;
 	position:relative;
 }
-  #nbe-campings { display:block; position:absolute; bottom:1px; left:64px; width:12px; height:1px; background:url(img/camp_square.png) repeat-y center bottom; }
-  #nbe-emplacements { display:block; position:absolute; bottom:1px; left:78px; width:12px; height:1px; background:url(img/loc_square.png) repeat-y center bottom; }
+  #nbe-campings { display:block; position:absolute; bottom:3px; left:63px; width:12px; height:1px; background:url(img/camp_square.png) repeat-y center bottom; }
+  #nbe-emplacements { display:block; position:absolute; bottom:3px; left:77px; width:12px; height:1px; background:url(img/loc_square.png) repeat-y center bottom; }
 
 /*Partie droite*/
 #main_right{
@@ -128,10 +129,10 @@ header { min-height:110px; }
 
 /*Titre de la légende des cercles*/
 #title_legend_2{
-	font-family: 'Architects Daughter', cursive;
 	color:#27341e;
 	font-size:18px;
-	margin-bottom:35px;
+	margin-top:10px;
+	margin-bottom:25px;
 }
 
 /*Légendes des cercles*/
@@ -151,8 +152,7 @@ header { min-height:110px; }
 #text1, #text2, #text3{
 	float:right;
 	margin-top:5px;
-	font-family: 'Architects Daughter', cursive;
-	font-size:12px;	
+	font-size:10px;	
 }
 
 /*Texte 1 des légendes des cercles*/
@@ -178,12 +178,7 @@ footer{
 	width:100%; position:relative;
 }
 #openInfoBulle{display:block;width:30px;height:30px;position:absolute;bottom:-5px;right:-5px; border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius: 20px;-o-border-radius: 20px; background:url(img/i_information.png)no-repeat center center #3b4f2e;}
-#vfonce{
-	float:left;
-	width:664px;
-	background-color:#989e5a;
-	height:10px;
-}
+#vfonce{	float:left; width:664px; background-color:#989e5a; height:10px; }
 
 #vclair{
 	float:right;
@@ -203,8 +198,8 @@ footer{
 }*/
 
 #info-bg {display:none; position:absolute;top:0;left:0;width:100%;height:100%; background:rgba(0,0,0,0.4);}
-#info-bulle{display:none; position:absolute;top:100px;width:100%;float:right;font-family: 'Architects Daughter', cursive; text-align:center; }
-#info-bulle .wrapper {margin:0 auto; width:600px;padding : 20px;background-color:#3b4f2e;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px; }
+#info-bulle{display:none; position:absolute;top:100px;width:100%;float:right;text-align:center; }
+#info-bulle .wrapper {margin:0 auto; width:600px;padding : 20px;background-color:#3b4f2e;color:#CCC;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px; }
 #info-bulle h2{color:#989e5a; margin-top:25px;}
 #info-bulle p {text-align:justify;}
 #info-bulle	p:first-letter{ padding-left: 20px; }

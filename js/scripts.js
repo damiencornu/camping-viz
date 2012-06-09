@@ -44,7 +44,7 @@ $(function() {
     $('#info-bulle').slideDown(300);
     event.preventDefault();
   });
-  $('#info-bg').live('click', function(event){
+  $('#info-bg, #closeInffoBulle').live('click', function(event){
     $('#info-bulle').slideUp(300, function(){
       $('#info-bg').css('display','none');
     });
